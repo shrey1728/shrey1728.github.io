@@ -30,6 +30,7 @@
   --black_70: hsla(0, 0%, 0%, 0.7);
   --rajah: hsl(29, 99%, 67%);
   --white: hsl(0, 0%, 100%);
+  --white_80: hsl(0, 0%, 100%, 0.8);
   --navy-blue: hsla(226, 42%, 18%, 1);
   --cyan: hsla(182, 87%, 50%, 1);
 
@@ -413,8 +414,8 @@ body {
 }
 
 .hero-text {
-  color: var(--white);
-  font-size: var(--fs-8);
+  color: var(--white_80);
+  font-size: var(--fs-7);
   margin-block-end: 30px;
 }
 
