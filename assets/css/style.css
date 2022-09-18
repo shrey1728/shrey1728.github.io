@@ -22,19 +22,20 @@
   --space-cadet-1: hsl(230, 41%, 25%);
   --space-cadet-2: hsl(230, 59%, 16%);
   --winter-sky_50: hsla(335, 87%, 53%, 0.5);
-  --purple-navy: hsl(236, 26%, 43%);
-  --ksu-purple: hsl(275, 54%, 33%);
+  --purple-navy: hsl(236deg 50% 37%);
+  --ksu-purple: hsl(275deg 50% 35%);
   --winter-sky: hsl(335, 87%, 53%);
   --razzmatazz: hsl(335, 87%, 51%);
   --platinum: hsl(0, 0%, 90%);
   --black_70: hsla(0, 0%, 0%, 0.7);
   --rajah: hsl(29, 99%, 67%);
   --white: hsl(0, 0%, 100%);
+  --navy-blue: hsla(226, 42%, 18%, 1);
 
   --gradient-1: linear-gradient(
     90deg,
     var(--royal-blue-dark) 0,
-    var(--ksu-purple) 51%,
+    var(--navy-blue) 51%,
     var(--royal-blue-dark)
   );
   --gradient-2: linear-gradient(90deg, var(--razzmatazz), var(--rajah));
@@ -151,8 +152,8 @@ html {
 }
 
 body {
-  background-color: var(--white);
-  color: var(--purple-navy);
+  background-color: hsl(0deg 0% 100%);
+  color: hsl(236deg 70% 42%);
   font-size: 1.6rem;
 }
 
@@ -458,11 +459,6 @@ body {
   #SERVICE
 \*-----------------------------------*/
 
-.calendly-inline-widget {
-  display: block;
-  min-height: 1000px;
-}
-
 .service-list {
   display: grid;
   gap: 30px;
@@ -666,7 +662,7 @@ body {
   background-repeat: no-repeat;
   background-size: auto, 200%;
   background-position: center, center;
-  color: var(--white);
+  color: hsl(0deg 0% 100%);
 }
 
 .footer-brand {
