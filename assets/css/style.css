@@ -28,11 +28,13 @@
   --razzmatazz: hsl(335, 87%, 51%);
   --platinum: hsl(0, 0%, 90%);
   --black_70: hsla(0, 0%, 0%, 0.7);
+  --black_100: hsl(0, 0%, 0%);
   --rajah: hsl(29, 99%, 67%);
   --white: hsl(0, 0%, 100%);
   --white_80: hsl(0, 0%, 100%, 0.8);
   --navy-blue: hsla(226, 42%, 18%, 1);
   --cyan: hsla(182, 87%, 50%, 1);
+  --neon_pink: hsla(296, 87%, 50%, 1);
 
   --gradient-1: linear-gradient(
     90deg,
@@ -40,7 +42,7 @@
     var(--navy-blue) 51%,
     var(--royal-blue-dark)
   );
-  --gradient-2: linear-gradient(90deg, var(--razzmatazz), var(--rajah));
+  --gradient-2: linear-gradient(90deg, var(--cyan), var(--cyan));
 
   /**
    * typography
@@ -193,7 +195,7 @@ body {
 .btn {
   background-image: var(--gradient-2);
   background-size: 200%;
-  color: var(--white);
+  color: var(--black_100);
   padding: 12px 35px;
   font-size: var(--fs-8);
   font-weight: var(--fw-500);
@@ -693,7 +695,7 @@ body {
 
 .footer-top .social-link {
   background-color: var(--white);
-  color: var(--winter-sky);
+  color: var(--cyan);
   font-size: 18px;
   padding: 8px;
   border-radius: 50%;
