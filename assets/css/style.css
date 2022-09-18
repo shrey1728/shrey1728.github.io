@@ -31,6 +31,7 @@
   --rajah: hsl(29, 99%, 67%);
   --white: hsl(0, 0%, 100%);
   --navy-blue: hsla(226, 42%, 18%, 1);
+  --cyan: hsla(182, 87%, 50%, 1);
 
   --gradient-1: linear-gradient(
     90deg,
@@ -46,6 +47,7 @@
 
   --ff-source-sans-pro: "Source Sans Pro", sans-serif;
   --ff-poppins: "Poppins", sans-serif;
+  --ff-mulish: "Mulish", sans-serif;
 
   --fs-1: 4.2rem;
   --fs-2: 3.8rem;
@@ -299,8 +301,13 @@ body {
 
 .logo {
   color: var(--color);
-  font-family: var(--ff-source-sans-pro);
+  font-family: var(--ff-mulish);
   font-size: var(--fs-3);
+}
+
+.logo-middle {
+  color: var(--cyan);
+  display: inline-block;
 }
 
 .nav-open-btn {
