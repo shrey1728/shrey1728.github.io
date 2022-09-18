@@ -424,7 +424,6 @@ body {
 \*-----------------------------------*/
 
 .about-banner {
-  margin-block-end: 30px;
 }
 
 .about .section-title {
@@ -437,30 +436,9 @@ body {
 }
 
 .about-text {
-  font-size: var(--fs-8);
+  font-size: var(--fs-7);
+  line-height: 175%;
   margin-block-end: 20px;
-}
-
-.stats-list {
-  display: grid;
-  gap: 30px;
-}
-
-.stats-card {
-  text-align: center;
-  padding: 15px;
-  box-shadow: var(--shadow);
-  border-radius: var(--radius-12);
-}
-
-.stats-title {
-  color: var(--st-patricks-blue);
-  font-size: var(--fs-2);
-  font-weight: var(--fw-700);
-}
-
-.stats-text {
-  font-size: var(--fs-8);
 }
 
 /*-----------------------------------*\
