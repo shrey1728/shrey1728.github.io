@@ -62,6 +62,7 @@
   --fw-500: 500;
   --fw-600: 600;
   --fw-700: 700;
+  --fw-800: 800;
 
   /**
    * border radius
@@ -304,6 +305,8 @@ body {
   color: var(--color);
   font-family: var(--ff-mulish);
   font-size: var(--fs-3);
+  font-weight: var(--fw-800);
+  display: inline-block;
 }
 
 .logo-middle {
@@ -423,9 +426,6 @@ body {
   #ABOUT
 \*-----------------------------------*/
 
-.about-banner {
-}
-
 .about .section-title {
   margin-inline: 0;
 }
@@ -442,15 +442,61 @@ body {
 }
 
 /*-----------------------------------*\
+  #FEATURE
+\*-----------------------------------*/
+
+.features-list > li:first-child {
+  margin-block-end: 30px;
+}
+
+.features-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.features-card .icon {
+  background-image: var(--gradient-1);
+  background-size: 200%;
+  color: var(--white);
+  min-width: max-content;
+  max-width: max-content;
+  font-size: 36px;
+  padding: 22px;
+  border-radius: 50%;
+}
+
+.features-card .icon ion-icon {
+  --ionicon-stroke-width: 20px;
+}
+
+.features-card .title {
+  margin-block-end: 10px;
+}
+
+.features-banner {
+  margin-block: 40px;
+}
+
+.features-banner > img {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+/*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
 
 .service-list {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 30px;
 }
 
 .service-card {
+  flex: 1;
+  max-width: 400px;
   padding: 30px;
   box-shadow: var(--shadow);
   border-radius: var(--radius-12);
@@ -508,46 +554,18 @@ body {
   background-color: var(--winter-sky);
 }
 
-/*-----------------------------------*\
-  #FEATURE
-\*-----------------------------------*/
-
-.features-list > li:first-child {
-  margin-block-end: 30px;
+.banner {
+  border-radius: 250px;
+  overflow: hidden;
+  margin-block-end: 20px;
 }
 
-.features-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
+.banner .img-cover {
+  transition: var(--transition-2);
 }
 
-.features-card .icon {
-  background-image: var(--gradient-1);
-  background-size: 200%;
-  color: var(--white);
-  min-width: max-content;
-  max-width: max-content;
-  font-size: 36px;
-  padding: 22px;
-  border-radius: 50%;
-}
-
-.features-card .icon ion-icon {
-  --ionicon-stroke-width: 20px;
-}
-
-.features-card .title {
-  margin-block-end: 10px;
-}
-
-.features-banner {
-  margin-block: 40px;
-}
-
-.features-banner > img {
-  max-width: max-content;
-  margin-inline: auto;
+.banner :hover {
+  transform: scale(1.1);
 }
 
 /*-----------------------------------*\
@@ -652,11 +670,12 @@ body {
 }
 
 .footer-brand {
+  min-width: 307px;
   margin-block-end: 30px;
 }
 
 .footer-brand .logo {
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-800);
   margin-block-end: 15px;
 }
 
