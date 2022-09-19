@@ -707,6 +707,7 @@ body {
 }
 
 .footer-list:not(:last-child) {
+  min-width: 170px;
   margin-block-end: 25px;
 }
 
