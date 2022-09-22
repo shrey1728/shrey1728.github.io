@@ -258,7 +258,7 @@ body {
   font-weight: var(--fw-700);
 }
 
-:is(.service-card, .features-card, .blog-card) .text {
+:is(.service-card, .features-card) .text {
   font-size: var(--fs-8);
 }
 
@@ -491,7 +491,7 @@ body {
 
 .service-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   gap: 30px;
 }
@@ -568,87 +568,6 @@ body {
 
 .banner :hover {
   transform: scale(1.1);
-}
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-.blog {
-  padding-block-end: 120px;
-}
-
-.blog-list {
-  display: grid;
-  gap: 30px;
-}
-
-.blog-card {
-  padding: 20px;
-  box-shadow: var(--shadow);
-  border-radius: var(--radius-12);
-}
-
-.blog-card .banner {
-  border-radius: var(--radius-12);
-  overflow: hidden;
-  margin-block-end: 15px;
-}
-
-.blog-card .banner img {
-  transition: var(--transition-2);
-}
-
-.blog-card .banner a:is(:hover, :focus) img {
-  transform: scale(1.1);
-}
-
-.blog-card .title {
-  color: var(--st-patricks-blue);
-  font-size: var(--fs-6);
-  line-height: 1.2;
-  margin-block-end: 15px;
-}
-
-.blog-card .title > a {
-  color: inherit;
-}
-
-.blog-card .title > a:is(:hover, :focus) {
-  color: var(--razzmatazz);
-}
-
-.blog-card .text {
-  margin-block-end: 15px;
-}
-
-.blog-card .meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  font-size: var(--fs-8);
-  color: var(--purple-navy);
-  font-weight: var(--fw-500);
-  padding-block-end: 10px;
-}
-
-.blog-card .meta ion-icon {
-  color: var(--winter-sky);
-  font-size: 22px;
-  --ionicon-stroke-width: 35px;
-}
-
-.publish-date,
-.comment {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.comment {
-  color: inherit;
-  margin-inline-start: auto;
 }
 
 /*-----------------------------------*\
@@ -824,25 +743,6 @@ body {
   }
 
   /**
-   * BLOG
-   */
-
-  .blog-card {
-    display: grid;
-    grid-template-columns: 0.75fr 1fr;
-    gap: 20px;
-    padding: 30px;
-  }
-
-  .blog-card .banner {
-    margin-block-end: 0;
-  }
-
-  .blog-card .banner a {
-    height: 100%;
-  }
-
-  /**
    * FOOTER
    */
 
@@ -898,6 +798,13 @@ body {
 
   .service-list {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .service-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
   }
 
   /**
@@ -1075,24 +982,6 @@ body {
 
   .hero {
     min-height: 800px;
-  }
-
-  /**
-   * BLOG
-   */
-
-  .blog-list {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .blog-card {
-    height: 100%;
-  }
-
-  .blog-card .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   /**
