@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "acesquaremedia.com",
+  "Id": "2922a67e-9c1b-476a-9b51-250c2b2ac2bd"
+}
